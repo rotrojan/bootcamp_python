@@ -1,0 +1,4 @@
+pip list
+pip freeze
+pip show numpy
+pip search tesseract
