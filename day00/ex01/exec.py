@@ -1,3 +1,3 @@
-import sys
+from sys import argv
 
-print(" ".join(sys.argv[1:len(sys.argv):1]).swapcase()[::-1], end=' ')
+print(" ".join(argv[1:])[::-1].swapcase())

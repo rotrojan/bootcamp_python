@@ -1,14 +1,25 @@
-import sys
+from sys import argv
 
-if len(sys.argv) != 2:
-    SystemExit()
-try:
-    if int(sys.argv[1]) == 0:
+
+def is_even(nbr):
+    if int(argv[1]) == 0:
         print("I'm Zero.")
-    elif int(sys.argv[1]) % 2 == 0:
+    elif int(argv[1]) % 2 == 0:
         print("I'm Even.")
-    elif int(sys.argv[1]) % 2 != 0:
+    else:
         print("Im Odd.")
 
-except:
-    SystemExit()
+
+def main():
+    try:
+        assert len(argv) == 2
+        nbr = int(argv[1])
+        is_even(argv)
+    except AssertionError:
+        print("ERROR")
+    except ValueError:
+        print("ERROR")
+
+
+if __name__ == "__main__":
+    main()

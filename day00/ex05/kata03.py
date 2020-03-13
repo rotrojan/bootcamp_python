@@ -1,3 +1,3 @@
 phrase = "The right format"
 
-print("{:->42}".format(phrase), end="")
+print("{: >42}".format(phrase), end="")

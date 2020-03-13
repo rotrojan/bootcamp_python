@@ -1,6 +1,3 @@
-import sys
-
-
 def text_analyzer(text=None):
     """This function counts the number of upper characters, lower characters,
     punctuation and spaces in a given text."""
